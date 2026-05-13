@@ -7,36 +7,48 @@
 html, body {
   height: 100%;
   background-color: #ffffff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
 body {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  flex-direction: column;
+}
+
+header {
+  padding: 8px 24px;
+}
+
+header nav img {
+  max-height: 48px;
+  max-width: 65vw;
+  object-fit: contain;
+  display: block;
+  margin-block: 4px;
 }
 
 main {
+  flex: 1;
+}
+
+footer {
+  padding: 16px 24px;
+}
+
+.footer-inner {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 24px;
-  padding: 24px;
+  justify-content: space-between;
 }
 
-main a {
-  display: block;
-}
-
-main img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
+footer img {
+  max-height: 32px;
+  max-width: 100%;
+  object-fit: contain;
   display: block;
 }
 
 .copyright {
   font-size: 13px;
   color: #888888;
-  letter-spacing: 0.02em;
 }
