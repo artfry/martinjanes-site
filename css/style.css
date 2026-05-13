@@ -1,0 +1,42 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+}
+
+main a {
+  display: block;
+}
+
+main img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #888888;
+  letter-spacing: 0.02em;
+}
